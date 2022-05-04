@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rocks
-  m_Shader: {fileID: 4800000, guid: 0f4122b9a743b744abe2fb6a0a88868b, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0f4acff535e002d4881ddb511b371837, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -60,8 +60,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - Vector1_4e3a6099455c40b698e3a5826a34d549: 0.75
+    - Vector1_8c79c3cc2e6447dbab0a23672124881c: 0.51
+    - Vector1_e0057fcdda5144f6b7482e44723a48a3: 0.42
+    - Vector1_ea765d2317b649dd9f042eeeacf51db1: 1
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
@@ -74,6 +90,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueControl: 0
+    - _QueueOffset: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -81,6 +99,9 @@ Material:
     - _WindQuality: 0
     - _ZWrite: 1
     m_Colors:
+    - Color_5ae8391a7d044b948ef7d497dd574ea4: {r: 1, g: 1, b: 1, a: 1}
+    - Color_8209fcfbd308413e87b64ee6cb6ca73e: {r: 1, g: 0, b: 0.033491135, a: 1}
+    - Color_d1bd2839a01f4a739d5da3d57122a9e5: {r: 0, g: 0.85551786, b: 1, a: 1}
     - _Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
