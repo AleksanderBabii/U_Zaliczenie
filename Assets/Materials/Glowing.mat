@@ -93,9 +93,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - Color_5ae8391a7d044b948ef7d497dd574ea4: {r: 1, g: 0.8537105, b: 0, a: 1}
-    - Color_8209fcfbd308413e87b64ee6cb6ca73e: {r: 0, g: 0.008828702, b: 0.26415092, a: 1}
-    - Color_d1bd2839a01f4a739d5da3d57122a9e5: {r: 1, g: 0, b: 0, a: 1}
+    - Color_5ae8391a7d044b948ef7d497dd574ea4: {r: 0.9622642, g: 0.8233002, b: 0.004538993, a: 1}
+    - Color_8209fcfbd308413e87b64ee6cb6ca73e: {r: 1, g: 0, b: 0.72823, a: 1}
+    - Color_d1bd2839a01f4a739d5da3d57122a9e5: {r: 0, g: 0.9878011, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

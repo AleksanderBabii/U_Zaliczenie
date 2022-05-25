@@ -5,6 +5,9 @@ using UnityEngine;
 public class EnemySpawn : MonoBehaviour
 {
     public GameObject theEnemy;
+    public GameObject fastEnemy;
+    public GameObject damageableEnemy;
+
     public int xPos;
     public int zPos;
     public int enemyCount;

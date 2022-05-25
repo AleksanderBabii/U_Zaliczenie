@@ -175,8 +175,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.7075472, g: 0.695866, b: 0.630785, a: 1}
-  m_Intensity: 20
+  m_Color: {r: 0.8962264, g: 0.83281416, b: 0.49461553, a: 1}
+  m_Intensity: 200
   m_Range: 5
   m_SpotAngle: 70
   m_InnerSpotAngle: 21.80208
@@ -415,9 +415,11 @@ GameObject:
   - component: {fileID: 7130650650194959568}
   - component: {fileID: 8456492588784831200}
   - component: {fileID: 2219590}
-  - component: {fileID: 2219597}
   - component: {fileID: 2219598}
   - component: {fileID: 1004246384}
+  - component: {fileID: 1004246391}
+  - component: {fileID: 1004246392}
+  - component: {fileID: 1004246409}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -506,7 +508,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.6
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -525,7 +527,6 @@ MonoBehaviour:
   controller: {fileID: 8456492588784831200}
   groundCheck: {fileID: 520302420}
   playerRoot: {fileID: 6233614440763000404}
-  head: {fileID: 0}
   walkSpeed: 3
   sprintSpeed: 10
   currentSpeed: 3
@@ -537,36 +538,14 @@ MonoBehaviour:
   playerDefaultHeight: 1
   playerCrouchHeight: 0.5
   crouchSpeed: 2
-  roofCheckDistance: 0.1
   sprintKeyCode: 304
   jumpKeyCode: 32
   crouchKeyCode: 99
   groundMask:
     serializedVersion: 2
     m_Bits: 128
-  whatIsRoof:
-    serializedVersion: 2
-    m_Bits: 0
   isSprinting: 0
   crouching: 0
-  cantCrouch: 0
---- !u!114 &2219597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8925454265614684469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db2339c08f1ff984cae35cccb2f366ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 3
-  mask:
-    serializedVersion: 2
-    m_Bits: 8
-  interact: 0
 --- !u!114 &2219598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,3 +573,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 10
+  playerMR: {fileID: 7130650650194959568}
+  playerC: {fileID: 2219590}
+--- !u!114 &1004246391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925454265614684469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be3b84902246814f9808560396d9cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
+  failSafe: 0
+  lightSource: {fileID: 1661282114}
+  lightOn: 102
+--- !u!114 &1004246392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925454265614684469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad5db4b5cc7fe44d97c81f34337719a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 10
+  emptyHeart: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  fullHeart: {fileID: 21300000, guid: a5963fd694e50a147bb0805d0ef5374f, type: 3}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  playerHealth: {fileID: 1004246384}
+--- !u!114 &1004246409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925454265614684469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dad7170e91d9e645834e003606fdac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
