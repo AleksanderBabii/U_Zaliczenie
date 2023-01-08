@@ -7,8 +7,8 @@ public class PlayerMouseController : MonoBehaviour
     public Camera cam;
     private float xRotation = 0f;
 
-    public float xSensetivity = 30f;
-    public float ySensetivity = 30f;
+    public float xSensetivity = 50f;
+    public float ySensetivity = 50f;
 
     public Transform playerBody;
 
