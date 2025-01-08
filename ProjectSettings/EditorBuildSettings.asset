@@ -5,13 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: b207082192f0ea54e9f63d456e1ad20a
   - enabled: 1
-    path: Assets/Scenes/GameProrotype.unity
+    path: Assets/Scenes/GamePrototype.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 2505ef81652ff6541badcce5c85b305d
+  - enabled: 1
+    path: Assets/Scenes/GoldenShrineMenu.unity
+    guid: 9cb2b79a9acaaf8448fbb27a7399d086
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

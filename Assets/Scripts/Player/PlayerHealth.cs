@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public void TakeDamage(int amount)
         {
             playerMR.enabled = false;
             playerC.enabled = false;
+            SceneManager.LoadScene("GameOver");
+
         }
     }
 }
